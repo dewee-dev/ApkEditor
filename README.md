@@ -9,18 +9,6 @@
 [![Telegram Channel](https://img.shields.io/badge/Telegram-Channel-blue.svg?style=flat-square)](https://t.me/apkeditor2021)
 [![Telegram Group](https://img.shields.io/badge/Telegram-Group-blue.svg?style=flat-square)](https://t.me/dexprotect)
 
-## Contributions
-
-   SteelWorks
-
-   SnowVolf
-
-## Special Thanks
-
-   ApkTool
-
-   Smali
-
 ## GNU GPL 3.0 Licence
 
     Copyright (C) 2021-2022 Ivan Timashkov
