@@ -1,6 +1,7 @@
 <resources>
     <!--App -->
     <string name="app_name">ApkEditor</string>
+    <string name="app_odex_patcher">Odex Patcher</string>
     <string name="app_home">Главная</string>
     <string name="app_projects">Проекты</string>
     <string name="app_settings">Настройки</string>
@@ -24,5 +25,10 @@
     <string name="pref_summary_output_apk_name">Выберите имя выходного Apk</string>
     <string name="pref_title_clear_data">Очистить данные</string>
     <string name="pref_summary_clear_data">Нажмите для очистки всех данных приложения</string>
+
+    <!-- Main Fragment -->
+    <string name="main_btn_select_apk_file">Выберите Apk файл</string>
+    <string name="main_btn_select_installed_apk">Выберите установленный Apk</string>
+    <string name="main_btn_odex_patcher">Odex Patcher</string>
 
 </resources>

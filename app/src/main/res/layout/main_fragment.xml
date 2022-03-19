@@ -11,18 +11,18 @@
         android:id="@+id/select_apk_file"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Select Apk File"/>
+        android:text="@string/main_btn_select_apk_file"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/select_installed_apk"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Select Apk from App"/>
+        android:text="@string/main_btn_select_installed_apk"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/odex_patcher"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Odex Patcher"/>
+        android:text="@string/main_btn_odex_patcher"/>
 
 </androidx.appcompat.widget.LinearLayoutCompat>
