@@ -27,7 +27,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import com.mcal.apkeditor.databinding.MainPagerBinding;
-import com.mcal.apkeditor.ui.main.base.BaseActivity;
+import com.mcal.apkeditor.ui.base.BaseActivity;
 import com.mcal.apkeditor.ui.main.MainProjectsFragment;
 import com.mcal.apkeditor.ui.main.MainSettingsFragment;
 import com.mcal.apkeditor.ui.main.MainFragment;

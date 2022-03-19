@@ -20,19 +20,31 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
+import androidx.databinding.DataBindingUtil;
+import androidx.databinding.ViewDataBinding;
 import androidx.fragment.app.Fragment;
 
+import com.google.android.material.button.MaterialButton;
 import com.mcal.apkeditor.R;
+import com.mcal.apkeditor.databinding.MainFragmentBinding;
+import com.mcal.apkeditor.databinding.MainPagerBinding;
 
 import org.jetbrains.annotations.NotNull;
+import org.xmlpull.v1.XmlPullParser;
 
 public class MainFragment extends Fragment {
+    private MainFragmentBinding binding;
 
     @Override
     public View onCreateView(@NotNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.main_fragment, null);
+        binding = MainFragmentBinding.inflate(inflater, container, false);
 
-        return view;
+        binding.selectApkFile.setOnClickListener(view -> Toast.makeText(getContext(), "Select Apk File", Toast.LENGTH_SHORT).show());
+        binding.selectInstalledApk.setOnClickListener(view -> Toast.makeText(getContext(), "Select Installed Apk", Toast.LENGTH_SHORT).show());
+        binding.odexPatcher.setOnClickListener(view -> Toast.makeText(getContext(), "Odex Patcher", Toast.LENGTH_SHORT).show());
+
+        return binding.getRoot();
     }
 }

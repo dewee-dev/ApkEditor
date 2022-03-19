@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingRight="25dp"
+    android:paddingLeft="25dp">
 
-    <TextView
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/select_apk_file"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello, World!" />
+        android:layout_height="wrap_content"
+        android:text="Select Apk File"/>
 
-</RelativeLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/select_installed_apk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Apk from App"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/odex_patcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Odex Patcher"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

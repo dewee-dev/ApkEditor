@@ -20,18 +20,24 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 
+import com.google.android.material.button.MaterialButton;
 import com.mcal.apkeditor.R;
+import com.mcal.apkeditor.databinding.MainFragmentBinding;
+import com.mcal.apkeditor.databinding.MainProjectsFragmentBinding;
 
 import org.jetbrains.annotations.NotNull;
 
 public class MainProjectsFragment extends Fragment {
+    private MainProjectsFragmentBinding binding;
+
     @Override
     public View onCreateView(@NotNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.main_projects_fragment, null);
+        binding = MainProjectsFragmentBinding.inflate(inflater, container, false);
 
-        return view;
+        return binding.getRoot();
     }
 }
