@@ -56,7 +56,7 @@ public class MainActivity extends BaseActivity {
 
         MainFragment startFragment = new MainFragment();
         fragment_list.add(startFragment);
-        titles_list.add(getString(R.string.app_name));
+        titles_list.add(getString(R.string.app_home));
 
         mMainProjectsFragment = new MainProjectsFragment();
         fragment_list.add(mMainProjectsFragment);
