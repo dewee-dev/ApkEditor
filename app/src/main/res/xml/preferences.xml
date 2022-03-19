@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.preference.PreferenceCategory
+        android:title="@string/pref_category_title_appearance"
+        app:layout="@layout/shadow_view">
+        <androidx.preference.ListPreference
+            android:key="key_app_language"
+            android:title="@string/pref_title_app_language"
+            android:summary="@string/pref_summary_app_language"/>
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:title="@string/pref_category_title_apk_decoder"
+        app:layout="@layout/shadow_view">
+
+        <androidx.preference.SwitchPreference
+            android:key="key_multi_res"
+            android:defaultValue="true"
+            android:title="@string/pref_title_multi_res"
+            android:summary="@string/pref_summary_multi_res"/>
+
+        <androidx.preference.ListPreference
+            android:key="key_decode_mode"
+            android:title="@string/pref_title_decode_mode"
+            android:summary="@string/pref_summary_decode_mode"/>
+
+        <androidx.preference.EditTextPreference
+            android:key="key_output_dir"
+            android:title="@string/pref_title_output_dir"
+            android:summary="@string/pref_summary_output_dir"/>
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:title="@string/pref_category_title_apk_builder"
+        app:layout="@layout/shadow_view">
+
+        <androidx.preference.SwitchPreference
+            android:key="key_aapt2"
+            android:title="@string/pref_title_aapt2"
+            android:summary="@string/pref_summary_aapt2"/>
+
+
+        <androidx.preference.ListPreference
+            android:key="key_output_apk_name"
+            android:title="@string/pref_title_output_apk_name"
+            android:summary="@string/pref_summary_output_apk_name"/>
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:title="@string/pref_category_title_others"
+        app:layout="@layout/shadow_view">
+
+        <androidx.preference.Preference
+            android:key="key_clear_data"
+            android:title="@string/pref_title_clear_data"
+            android:summary="@string/pref_summary_clear_data"/>
+
+    </androidx.preference.PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

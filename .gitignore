@@ -5,3 +5,5 @@ app/release/
 build/
 .gradle/
 .idea/
+gradlew
+gradlew.bat

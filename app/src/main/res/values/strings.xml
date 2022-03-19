@@ -1,0 +1,27 @@
+<resources>
+    <!--App -->
+    <string name="app_name">ApkEditor</string>
+    <string name="app_projects">Projects</string>
+    <string name="app_settings">Settings</string>
+
+    <!--Preferences -->
+    <string name="pref_category_title_appearance">Appearance</string>
+    <string name="pref_category_title_apk_decoder">Apk Decoder</string>
+    <string name="pref_category_title_apk_builder">Apk Builder</string>
+    <string name="pref_category_title_others">Others</string>
+    <string name="pref_title_app_language">App Language</string>
+    <string name="pref_summary_app_language">Select app language</string>
+    <string name="pref_title_multi_res">Multi Package</string>
+    <string name="pref_summary_multi_res">Fix decode multi resources</string>
+    <string name="pref_title_decode_mode">Decode Mode</string>
+    <string name="pref_summary_decode_mode">Select decode mode</string>
+    <string name="pref_title_output_dir">Output Dir</string>
+    <string name="pref_summary_output_dir">Select output directory</string>
+    <string name="pref_title_aapt2">Aapt2</string>
+    <string name="pref_summary_aapt2">Use aapt2 to compile resources</string>
+    <string name="pref_title_output_apk_name">Output Apk Name</string>
+    <string name="pref_summary_output_apk_name">Select output apk name</string>
+    <string name="pref_title_clear_data">Clear data</string>
+    <string name="pref_summary_clear_data">Click here to clean the temporary files</string>
+
+</resources>
