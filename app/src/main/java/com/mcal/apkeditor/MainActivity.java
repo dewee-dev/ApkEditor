@@ -28,9 +28,9 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.mcal.apkeditor.databinding.MainPagerBinding;
 import com.mcal.apkeditor.ui.base.BaseActivity;
+import com.mcal.apkeditor.ui.main.MainFragment;
 import com.mcal.apkeditor.ui.main.MainProjectsFragment;
 import com.mcal.apkeditor.ui.main.MainSettingsFragment;
-import com.mcal.apkeditor.ui.main.MainFragment;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -40,7 +40,6 @@ import java.util.List;
 public class MainActivity extends BaseActivity {
 
     private MainPagerBinding binding;
-    private ViewPager mMainViewPager;
     private MainProjectsFragment mMainProjectsFragment;
     private MainSettingsFragment mMainSettingsFragment;
 
@@ -68,12 +67,11 @@ public class MainActivity extends BaseActivity {
 
         MainFragmentPagerAdapter pagerAdapter = new MainFragmentPagerAdapter(fragment_list, titles_list);
 
-        mMainViewPager = findViewById(R.id.view_pager);
-        mMainViewPager.setAdapter(pagerAdapter);
-        mMainViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+        binding.viewPager.setAdapter(pagerAdapter);
+        binding.viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-                setTitle(mMainViewPager.getAdapter().getPageTitle(position));
+                setTitle(binding.viewPager.getAdapter().getPageTitle(position));
             }
 
             @Override
@@ -108,11 +106,11 @@ public class MainActivity extends BaseActivity {
     private void switchViewPager(@NotNull MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.item_main_page) {
-            mMainViewPager.setCurrentItem(0, false);
+            binding.viewPager.setCurrentItem(0, false);
         } else if (id == R.id.item_main_projects) {
-            mMainViewPager.setCurrentItem(1, false);
+            binding.viewPager.setCurrentItem(1, false);
         } else if (id == R.id.item_main_settings) {
-            mMainViewPager.setCurrentItem(2, false);
+            binding.viewPager.setCurrentItem(2, false);
         }
     }
 

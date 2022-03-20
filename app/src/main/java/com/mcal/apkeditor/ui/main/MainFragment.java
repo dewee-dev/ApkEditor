@@ -23,27 +23,23 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import androidx.databinding.DataBindingUtil;
-import androidx.databinding.ViewDataBinding;
-import androidx.fragment.app.Fragment;
-
-import com.google.android.material.button.MaterialButton;
-import com.mcal.apkeditor.R;
 import com.mcal.apkeditor.databinding.MainFragmentBinding;
-import com.mcal.apkeditor.databinding.MainPagerBinding;
+import com.mcal.apkeditor.ui.base.BaseFragment;
+import com.mcal.apkeditor.ui.editor.MainEditorActivity;
 import com.mcal.apkeditor.ui.odex.OdexPatcherActivity;
 
 import org.jetbrains.annotations.NotNull;
-import org.xmlpull.v1.XmlPullParser;
 
-public class MainFragment extends Fragment {
+public class MainFragment extends BaseFragment {
     private MainFragmentBinding binding;
 
     @Override
     public View onCreateView(@NotNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         binding = MainFragmentBinding.inflate(inflater, container, false);
 
-        binding.selectApkFile.setOnClickListener(view -> Toast.makeText(getContext(), "Select Apk File", Toast.LENGTH_SHORT).show());
+        binding.selectApkFile.setOnClickListener(view -> {
+            startActivity(new Intent(getActivity(), MainEditorActivity.class));
+        });
         binding.selectInstalledApk.setOnClickListener(view -> Toast.makeText(getContext(), "Select Installed Apk", Toast.LENGTH_SHORT).show());
         binding.odexPatcher.setOnClickListener(view -> {
             startActivity(new Intent(getActivity(), OdexPatcherActivity.class));

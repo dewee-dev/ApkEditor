@@ -20,18 +20,13 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
-import androidx.fragment.app.Fragment;
-
-import com.google.android.material.button.MaterialButton;
-import com.mcal.apkeditor.R;
-import com.mcal.apkeditor.databinding.MainFragmentBinding;
 import com.mcal.apkeditor.databinding.MainProjectsFragmentBinding;
+import com.mcal.apkeditor.ui.base.BaseFragment;
 
 import org.jetbrains.annotations.NotNull;
 
-public class MainProjectsFragment extends Fragment {
+public class MainProjectsFragment extends BaseFragment {
     private MainProjectsFragmentBinding binding;
 
     @Override
